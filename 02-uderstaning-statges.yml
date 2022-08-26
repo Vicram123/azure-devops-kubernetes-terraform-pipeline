@@ -20,6 +20,11 @@ stages:
     - bash: ls -R $(Build.SourceDirectory)
     - bash: echo $(Build.ArtifactStagingDirectory)
     - bash: echo $(Build.BinariesDirectory)
+    - bash: java -version
+    - bash: node --version
+    - bash: python --version
+    - bash: mvn --version
+
 
 #  - job: SecondJob
 #    steps: 
